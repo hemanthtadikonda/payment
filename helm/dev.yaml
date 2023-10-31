@@ -1,0 +1,7 @@
+component: payment
+port: 8080
+service_type: ClusterIP
+dev: env
+schema:
+  enabled: false
+PARAMETERS: payment.dev.CART_HOST,CART_HOST payment.dev.CART_PORT,CART_PORT payment.dev.USER_HOST,USER_HOST payment.dev.USER_PORT,USER_PORT payment.dev.AMQP_HOST,AMQP_HOST payment.dev.AMQP_USER,AMQP_USER payment.dev.AMQP_PASS,AMQP_PASS
